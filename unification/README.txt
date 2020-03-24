@@ -11,7 +11,7 @@ The training data for the application is present in the folder Machine-Learning\
 The test data: \unification\test_file.xlsx
 
 Sample Output:
-![Image description](https://github.com/abhiisnow/Machine-Learning/blob/master/unification/Capture.PNG)
+![image](https://github.com/abhiisnow/Machine-Learning/blob/master/unification/Capture.PNG)
 
 Author & Developer
 Abhinav
