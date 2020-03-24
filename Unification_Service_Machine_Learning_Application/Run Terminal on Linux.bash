@@ -1,0 +1,2 @@
+
+xterm -hold -e ls

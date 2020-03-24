@@ -1,0 +1,173 @@
+{
+  "language": "english",
+  "target": "\"C:\\Users\\z003v0nd\\Desktop\\Unification_Service_Machine_Learning_Application\\Unification_Service_Machine_Learning_Application\\Python37\\python.exe\" -u \"Machine_Learning_Tool\\Machine_Learning_Tool_Unification_Service.py\"",
+  "program_name": "LDA Multi purpose Tool",
+  "program_description": "LDA Unification Service!!!",
+  "sidebar_title": "Actions",
+  "default_size": [
+    610,
+    530
+  ],
+  "auto_start": false,
+  "show_advanced": true,
+  "run_validators": true,
+  "encoding": "utf-8",
+  "show_stop_warning": true,
+  "show_success_modal": true,
+  "force_stop_is_error": true,
+  "poll_external_updates": false,
+  "return_to_config": false,
+  "use_legacy_titles": true,
+  "num_required_cols": 2,
+  "num_optional_cols": 2,
+  "manual_start": false,
+  "monospace_display": false,
+  "image_dir": "::gooey/default",
+  "language_dir": "C:\\Users\\z003v0nd\\Desktop\\Unification_Service_Machine_Learning_Application\\Unification_Service_Machine_Learning_Application\\Python37\\lib\\site-packages\\gooey\\languages",
+  "progress_regex": null,
+  "progress_expr": null,
+  "disable_progress_bar_animation": false,
+  "disable_stop_button": false,
+  "navigation": "SIDEBAR",
+  "show_sidebar": false,
+  "tabbed_groups": false,
+  "group_by_type": true,
+  "body_bg_color": "#f0f0f0",
+  "header_bg_color": "#ffffff",
+  "header_height": 80,
+  "header_show_title": true,
+  "header_show_subtitle": true,
+  "header_image_center": false,
+  "footer_bg_color": "#f0f0f0",
+  "sidebar_bg_color": "#f2f2f2",
+  "terminal_panel_color": "#F0F0F0",
+  "terminal_font_color": "#000000",
+  "terminal_font_family": null,
+  "terminal_font_weight": null,
+  "terminal_font_size": null,
+  "error_color": "#ea7878",
+  "layout": "standard",
+  "widgets": {
+    "Machine_Learning_Tool_Unification_Service.py": {
+      "command": "::gooey/default",
+      "contents": [
+        {
+          "name": "Required Arguments",
+          "items": [
+            {
+              "id": "input_file_name",
+              "type": "FileChooser",
+              "cli_type": "positional",
+              "required": true,
+              "data": {
+                "display_name": "input_file_name",
+                "help": "Input Filename",
+                "required": true,
+                "nargs": "",
+                "commands": [],
+                "choices": [],
+                "default": null,
+                "dest": "input_file_name"
+              },
+              "options": {
+                "error_color": "#ea7878",
+                "validator": {
+                  "test": "user_input and not user_input.isspace()",
+                  "message": "This field is required"
+                },
+                "external_validator": {
+                  "cmd": ""
+                }
+              }
+            },
+            {
+              "id": "input_file_sheet_name",
+              "type": "TextField",
+              "cli_type": "positional",
+              "required": true,
+              "data": {
+                "display_name": "input_file_sheet_name",
+                "help": "Input Sheet Name(First sheet in case of multiple sheet processing.) if the file is a excel sheet (.xlsx)",
+                "required": true,
+                "nargs": "",
+                "commands": [],
+                "choices": [],
+                "default": "Enter Sheet Name",
+                "dest": "input_file_sheet_name"
+              },
+              "options": {
+                "error_color": "#ea7878",
+                "validator": {
+                  "test": "user_input and not user_input.isspace()",
+                  "message": "This field is required"
+                },
+                "external_validator": {
+                  "cmd": ""
+                }
+              }
+            },
+            {
+              "id": "column_name",
+              "type": "TextField",
+              "cli_type": "positional",
+              "required": true,
+              "data": {
+                "display_name": "column_name",
+                "help": "Input Column Name(s) to process from input file",
+                "required": true,
+                "nargs": "",
+                "commands": [],
+                "choices": [],
+                "default": "Initial_Value",
+                "dest": "column_name"
+              },
+              "options": {
+                "error_color": "#ea7878",
+                "validator": {
+                  "test": "user_input and not user_input.isspace()",
+                  "message": "This field is required"
+                },
+                "external_validator": {
+                  "cmd": ""
+                }
+              }
+            },
+            {
+              "id": "column_prediction_sorting_order",
+              "type": "TextField",
+              "cli_type": "positional",
+              "required": true,
+              "data": {
+                "display_name": "column_prediction_sorting_order",
+                "help": "Please confirm the order of sorting to save the file.\nPress 1. Best to Worst\nPress 2. Worst to Best \nYour Response:",
+                "required": true,
+                "nargs": "",
+                "commands": [],
+                "choices": [],
+                "default": "1",
+                "dest": "column_prediction_sorting_order"
+              },
+              "options": {
+                "error_color": "#ea7878",
+                "validator": {
+                  "test": "user_input and not user_input.isspace()",
+                  "message": "This field is required"
+                },
+                "external_validator": {
+                  "cmd": ""
+                }
+              }
+            }
+          ],
+          "groups": [],
+          "description": null,
+          "options": {
+            "columns": 2,
+            "padding": 10,
+            "show_border": false
+          }
+        }
+      ]
+    }
+  }
+}
